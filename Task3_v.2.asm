@@ -63,13 +63,13 @@ toupper:
 		jmp next
 
 next:
-        mov byte [buff + rcx], al  
-        inc rcx                    
+       	        mov byte [buff + rcx], al  
+                inc rcx                    
 
 		cmp byte [buff + rcx + 1], 0
-        jne replace                
+       	        jne replace                
 
-        ret
+     	        ret
 
 ;==========================================================================
 ;Printing the buffer to the command line
