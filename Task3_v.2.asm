@@ -18,9 +18,9 @@ _start:
 		call read                
 
 		mov dl, 'a'
-		sub dl, 'A'					; Found the difference between upper and lower case
+		sub dl, 'A'				
 
-		xor rcx, rcx				; Reset registrations to zero
+		xor rcx, rcx				
 		call replace
 
 		call write                   
