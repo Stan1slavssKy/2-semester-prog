@@ -66,11 +66,11 @@ file_write:
 ;     rax, rcx, rdi, rsi, rdx, rbx, rdx
 ;==========================================================================
 fill_chess_buf:
-        	    mov rcx, chess_buf_size
+                mov rcx, chess_buf_size
 
 chess_buf_loop:
 ; Get number (rax)
-		        xor rdx, rdx
+		xor rdx, rdx
                 mov rax, chess_buf_size
                 sub rax, rcx        ; push number of symbol in chess_buf
                 add rax, 1          
