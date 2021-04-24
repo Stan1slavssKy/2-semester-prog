@@ -186,9 +186,9 @@ flag                equ 66	    ; rw + create new file
 ; DATA SECTION
 section .data
 
-black_cell_square:  db '1'		; '#'  - symbol
-white_cell_square:  db '0' 	    ; ' '  - empty symbol
-new_str:            db 0xA		; '\n' - new string
+black_cell_square:  db '1'		
+white_cell_square:  db '0' 	   
+new_str:            db 0xA	
 
 string:             dq 1
 column:             dq 1
