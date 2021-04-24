@@ -72,7 +72,7 @@ chess_buf_loop:
 ; Get number (rax)
 		xor rdx, rdx
                 mov rax, chess_buf_size
-                sub rax, rcx        ; push number of symbol in chess_buf
+                sub rax, rcx       
                 add rax, 1          
 
 ; Checking for the new line
@@ -85,7 +85,7 @@ chess_buf_loop:
 ; Get number (rax)
                 xor rdx, rdx
                 mov rax, chess_buf_size
-                sub rax, rcx        ;push number of symbol in chess_buf
+                sub rax, rcx      
                 add rax, 1         
 
 ; Get the parity of the number
