@@ -40,14 +40,14 @@ L1:
 		jbe L2
 
 next:
-        mov byte [out_buff + rcx], al                                 
+		mov byte [out_buff + rcx], al                                 
 
 L2:
-        inc rcx 
-        cmp byte [out_buff + rcx + 1], 0
-        jne replace    
-
-        ret
+		inc rcx 
+		cmp byte [buff + rcx + 1], 0
+		jne replace    
+		
+		ret
 
 ;==========================================================================
 ;Printing the buffer to the command line
